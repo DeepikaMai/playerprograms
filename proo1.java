@@ -1,5 +1,4 @@
-import java.io.*;
-import java.lang.*;
+
 
 public String longestCommonPrefix(String[] strs) {
     if(strs == null || strs.length == 0)
