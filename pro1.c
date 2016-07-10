@@ -7,19 +7,19 @@ int min(int a, int b, int c);
 void MaxSubSquare(bool M[R][C])
 {
   int i,j;
-  int S[R][C];
+  int S[R1][C];
   int maximum, i_index_max, j_index_max;
   maximum = S[0][0]; i_index_max = 0; j_index_max = 0;
    
   /* Set first column of S[][]*/
-  for(i = 0; i < R; i++)
+  for(i = 0; i < R1; i++)
      S[i][0] = M[i][0];
    
   /* Set first row of S[][]*/   
   for(j = 0; j < C; j++)
      S[0][j] = M[0][j];
        
-    for(i = 1; i < R; i++)
+    for(i = 1; i < R1; i++)
     {
         for(j = 1; j < C; j++)
         {
@@ -31,7 +31,7 @@ void MaxSubSquare(bool M[R][C])
     }
     
    
-    for(i = 0; i < R; i++)
+    for(i = 0; i < R1; i++)
     {
         for(j = 0; j < C; j++)
         {
@@ -65,7 +65,7 @@ return m;
 }
 int main()
 {
-bool M[R][C] = {{0, 1, 1, 0, 1}, 
+bool M[R1][C] = {{0, 1, 1, 0, 1}, 
 				{1, 1, 0, 1, 0}, 
 				{0, 1, 1, 1, 0},
 				{1, 1, 1, 1, 0},
