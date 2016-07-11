@@ -45,7 +45,7 @@ public:
         // root of heap at target index and add arr[i]
         // to Min Heap
         if (i < n)
-            arr[ti] = hp.replaceMin(arr[i]);
+            arr[ti] = hp.replaceMin(arr[i]); 
  
         // Otherwise place root at its target index and
         // reduce heap size
